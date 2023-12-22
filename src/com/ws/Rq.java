@@ -1,14 +1,14 @@
 package com.ws;
 
 import java.util.HashMap;
-import java.util.Map;
+import java.util.Map; //해쉬맵과 맵을 사용하기 위한 임포트 불러오기
 
 // Rq == Request(요청)
-public class Rq {
-	private String actionCode;
-	private Map<String, String> params;
+public class Rq {// Rq 클래스
+	private String actionCode;//해당 클래스에서만 볼 수 있는 스트링 타입의 액션코드
+	private Map<String, String> params;//
 
-	public Rq(String cmd) {
+	public Rq(String cmd) {//
 		String[] cmdBits = cmd.split("\\?", 2);
 
 		actionCode = cmdBits[0];

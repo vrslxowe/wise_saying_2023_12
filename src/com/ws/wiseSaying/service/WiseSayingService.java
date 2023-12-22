@@ -5,7 +5,7 @@ import java.util.List;
 import com.ws.wiseSaying.entity.WiseSaying;
 import com.ws.wiseSaying.repository.WiseSayingRepository;
 
-public class WiseSayingService {
+public class WiseSayingService {//와이즈세잉서비스 클래스
 
 	private WiseSayingRepository wiseSayingRepository;
 
@@ -18,7 +18,7 @@ public class WiseSayingService {
 		return wiseSayingRepository.findAll();
 	}
 
-	public int write(String content, String author) {
+	public int write(String content, String author) {//
 
 		return wiseSayingRepository.write(content, author);
 	}
