@@ -1,8 +1,17 @@
 package com.ws;
 
-import java.util.Scanner;//스캐너 사용을 위한 임포트 불러오기
+import java.util.Scanner;
 
-public class Container {//컨테이너 클래스
+import com.ws.wiseSaying.service.WiseSayingService;
+
+public class Container {
+
+	public static WiseSayingService wiseSayingService;
+
+	static {
+		wiseSayingService = new WiseSayingService();
+	}
+
 	private static Scanner sc;
 
 	// 공통적으로 사용되는 자원들을 모아두는 공간 초기화

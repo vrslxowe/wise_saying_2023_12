@@ -5,12 +5,11 @@ import java.util.List;
 import com.ws.wiseSaying.entity.WiseSaying;
 import com.ws.wiseSaying.repository.WiseSayingRepository;
 
-public class WiseSayingService {//와이즈세잉서비스 클래스
+public class WiseSayingService {
 
 	private WiseSayingRepository wiseSayingRepository;
 
 	public WiseSayingService() {
-
 		wiseSayingRepository = new WiseSayingRepository();
 	}
 
@@ -18,8 +17,7 @@ public class WiseSayingService {//와이즈세잉서비스 클래스
 		return wiseSayingRepository.findAll();
 	}
 
-	public int write(String content, String author) {//
-
+	public int write(String content, String author) {
 		return wiseSayingRepository.write(content, author);
 	}
 
@@ -33,7 +31,6 @@ public class WiseSayingService {//와이즈세잉서비스 클래스
 
 	public void modify(WiseSaying wiseSaying, String content, String author) {
 		wiseSayingRepository.modify(wiseSaying, content, author);
-
 	}
 
 }
